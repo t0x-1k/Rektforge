@@ -74,7 +74,7 @@ Decompiles unverified smart contracts and checks for hidden backdoors.
 ```
 python web3_exploit.py --scan 0xDEADBEef1234567890abcdef
 ```
-##✔ Finds:
+## ✔ Finds:
 
 ### ✅ Reentrancy in withdrawFunds()
 
@@ -90,7 +90,7 @@ python web3_exploit.py --exploit reentrancy --contract 0xDEADBEef1234567890abcde
 ```
 python web3_exploit.py --flashloan AAVE --amount 1000000 --token DAI
 ```
-✔ Finds an arbitrage opportunity and suggests the most profitable attack path.
+## ✔ Finds an arbitrage opportunity and suggests the most profitable attack path.
 
 ### 4️⃣ Test for Frontrunning Vulnerabilities (MEV Attack)
 ```
