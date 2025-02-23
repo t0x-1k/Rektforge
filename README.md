@@ -17,7 +17,7 @@ Feature	Description
 
 The tool should have modular components for scanning, exploiting, and simulating attacks. Here’s how it should be structured:
 
-Web3 Exploit Framework
+# Web3 Exploit Framework
 
 │── core/                      # Core scanning & exploit engine
 │   ├── scanner.py              # Static + dynamic analysis of contracts
