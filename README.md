@@ -17,13 +17,27 @@ Feature	Description
 
 The tool should have modular components for scanning, exploiting, and simulating attacks. Here’s how it should be structured:
 
-nginx
+Web3 Exploit Framework
 
-Copy
+│── core/                      # Core scanning & exploit engine
+│   ├── scanner.py              # Static + dynamic analysis of contracts
+│   ├── exploit_generator.py     # Auto-generates attack payloads
+│   ├── fuzzing.py               # Transaction fuzzer for logic bugs
+│   ├── flashloan_sim.py         # Flash loan attack module
+│   ├── mev_attack.py            # Frontrunning & sandwich attack simulator
+│── modules/                    # Specific attack modules
+│   ├── reentrancy.py
+│   ├── access_control.py
 
-Edit
 
-<pre> # Web3 Exploit Framework ``` │── core/ # Core scanning & exploit engine │ ├── scanner.py # Static + dynamic analysis of contracts │ ├── exploit_generator.py # Auto-generates attack payloads │ ├── fuzzing.py # Transaction fuzzer for logic bugs │ ├── flashloan_sim.py # Flash loan attack module │ ├── mev_attack.py # Frontrunning & sandwich attack simulator │── modules/ # Specific attack modules │ ├── reentrancy.py │ ├── access_control.py │ ├── integer_overflow.py │── utils/ # Utility functions │ ├── web3_utils.py # Interact with Ethereum/Solana RPCs │ ├── bytecode_analysis.py # Disassembles & analyzes smart contract bytecode │── cli.py # CLI interface for running tests │── config.yaml # Config file (RPC endpoints, chain selection) │── results/ # Stores test results & exploits │── web3_exploit.py # Main entry point ``` </pre>
+│   ├── integer_overflow.py
+│── utils/                      # Utility functions
+│   ├── web3_utils.py            # Interact with Ethereum/Solana RPCs
+│   ├── bytecode_analysis.py     # Disassembles & analyzes smart contract bytecode
+│── cli.py                      # CLI interface for running tests
+│── config.yaml                  # Config file (RPC endpoints, chain selection)
+│── results/                    # Stores test results & exploits
+│── web3_exploit.py             # Main entry point
 
 Tech Stack:
 Component	Technology
