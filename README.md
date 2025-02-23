@@ -16,7 +16,7 @@ Feature	Description
 🏗️ Architecture & Tech Stack
 
 The tool should have modular components for scanning, exploiting, and simulating attacks. Here’s how it should be structured:
-
+```
 # Web3 Exploit Framework
 
 │── core/                      # Core scanning & exploit engine
@@ -38,7 +38,7 @@ The tool should have modular components for scanning, exploiting, and simulating
 │── config.yaml                  # Config file (RPC endpoints, chain selection)
 │── results/                    # Stores test results & exploits
 │── web3_exploit.py             # Main entry point
-
+```
 Tech Stack:
 Component	Technology
 Smart Contract Analysis	Python (Slither, Etherscan API)
