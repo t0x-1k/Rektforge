@@ -15,7 +15,7 @@ Feature	Description
 📜 Bytecode & Decompilation Analysis	Decompiles unverified smart contracts and checks for hidden backdoors.
 🏗️ Architecture & Tech Stack
 
-The tool should have modular components for scanning, exploiting, and simulating attacks. Here’s how it should be structured:
+The tool will have modular components for scanning, exploiting, and simulating attacks. This will be how it is structured:
 ```
 # Web3 Exploit Framework
 
