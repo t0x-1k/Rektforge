@@ -1,7 +1,7 @@
 Goal of the Framework  
-🔹 A Web3 security testing tool that automates smart contract exploitation by identifying and exploiting vulnerabilities in Ethereum (EVM-based) and Solana contracts.  
-🔹 Goes beyond static analysis (like Slither) by generating actual exploit payloads and simulating real attacks.  
-🔹 Can be used by pentesters, red teams, and security researchers to break DeFi protocols, DAOs, and NFT marketplaces.  
+  - A Web3 security testing tool that automates smart contract exploitation by identifying and exploiting vulnerabilities in Ethereum (EVM-based) and Solana contracts.  
+  - Goes beyond static analysis (like Slither) by generating actual exploit payloads and simulating real attacks.  
+  - Can be used by pentesters, red teams, and security researchers to break DeFi protocols, DAOs, and NFT marketplaces.  
 
 **Key Features**  
 
