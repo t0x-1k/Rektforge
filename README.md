@@ -1,35 +1,35 @@
-🎯 Goal of the Framework  
+Goal of the Framework  
 🔹 A Web3 security testing tool that automates smart contract exploitation by identifying and exploiting vulnerabilities in Ethereum (EVM-based) and Solana contracts.  
 🔹 Goes beyond static analysis (like Slither) by generating actual exploit payloads and simulating real attacks.  
 🔹 Can be used by pentesters, red teams, and security researchers to break DeFi protocols, DAOs, and NFT marketplaces.  
 
-⚡ **Key Features**  
+**Key Features**  
 
-🔍 **Vulnerability Scanner**  
+**Vulnerability Scanner**  
 Scans Solidity contracts for common vulnerabilities (Reentrancy, Integer Overflow, Access Control Issues, etc.).  
 
-🏴‍☠️ **Exploit Generator**  
+**Exploit Generator**  
 Generates real attack payloads and PoC scripts for detected vulnerabilities.  
 
-⚡ **Automated Fuzzing**  
+ **Automated Fuzzing**  
 Sends malicious transactions to find logic flaws in live smart contracts.  
 
-🔥 **Flash Loan Attack Simulator**  
+**Flash Loan Attack Simulator**  
 Tests whether a DeFi protocol is vulnerable to flash loan exploits.  
 
-🎭 **MEV Attack Engine**  
+**MEV Attack Engine**  
 Simulates sandwich attacks, frontrunning, and backrunning on Ethereum.  
 
-🛡️ **Automated Solidity Patching**  
+**Automated Solidity Patching**  
 Suggests fixes for vulnerable code (useful for DevSecOps).  
 
-🧩 **Support for Multiple Chains**  
+**Support for Multiple Chains**  
 Works on Ethereum, Polygon, BSC, Avalanche, and Solana.  
 
-📜 **Bytecode & Decompilation Analysis**  
+**Bytecode & Decompilation Analysis**  
 Decompiles unverified smart contracts and checks for hidden backdoors.  
 
-🏗️ **Architecture & Tech Stack**  
+**Architecture & Tech Stack**  
 
 
 **The tool will have modular components for scanning, exploiting, and simulating attacks. This will be how it is structured:**
@@ -56,7 +56,7 @@ Decompiles unverified smart contracts and checks for hidden backdoors.
 │── results/                    # Stores test results & exploits
 │── web3_exploit.py             # Main entry point
 ```
-## 🔥 Tech Stack  
+## Tech Stack  
 
 | **Component**                | **Technology**                              |
 |-----------------------------|------------------------------------------|
@@ -68,21 +68,21 @@ Decompiles unverified smart contracts and checks for hidden backdoors.
 | **MEV Exploit Engine**       | Rust + Flashbots API                     |
 
 
-## **🔥 How It Works (Example Workflows)**  
+## **How It Works (Example Workflows)**  
 
-### 1️⃣ Scan a Smart Contract for Vulnerabilities  
+### Scan a Smart Contract for Vulnerabilities  
 ```
 python web3_exploit.py --scan 0xDEADBEef1234567890abcdef
 ```
-## ✔ Finds:
+## Finds:
 
-### ✅ Reentrancy in withdrawFunds()
+### Reentrancy in withdrawFunds()
 
-### ✅ Integer Overflow in stakeTokens()
+### Integer Overflow in stakeTokens()
 
-### ✅ Broken Access Control in onlyOwner()
+### Broken Access Control in onlyOwner()
 
-### 2️⃣ Generate an Exploit Script
+### Generate an Exploit Script
 
 ```
 python web3_exploit.py --exploit reentrancy --contract 0xDEADBEef1234567890abcdef
@@ -90,22 +90,22 @@ python web3_exploit.py --exploit reentrancy --contract 0xDEADBEef1234567890abcde
 ```
 python web3_exploit.py --flashloan AAVE --amount 1000000 --token DAI
 ```
-## ✔ Finds an arbitrage opportunity and suggests the most profitable attack path.
+## Finds an arbitrage opportunity and suggests the most profitable attack path.
 
-### 4️⃣ Test for Frontrunning Vulnerabilities (MEV Attack)
+### Test for Frontrunning Vulnerabilities (MEV Attack)
 ```
 python web3_exploit.py --mev --tx 0xabc123def456
 ```
-## ✔ Uses Flashbots API to check if a transaction can be frontrun for profit.
+## Uses Flashbots API to check if a transaction can be frontrun for profit.
 
-### 🚀 How This Tool Benefits the Security Industry
+### How This Tool Benefits the Security Industry
 
-### ✅ Bug Bounty Hunters: Can find critical Web3 exploits before attackers.
+### Bug Bounty Hunters: Can find critical Web3 exploits before attackers.
 
-### ✅ Pentesters & Red Teams: Automates DeFi exploitation techniques.
+### Pentesters & Red Teams: Automates DeFi exploitation techniques.
 
-### ✅ Smart Contract Developers: Helps detect & patch dangerous vulnerabilities.
+### Smart Contract Developers: Helps detect & patch dangerous vulnerabilities.
 
-### ✅ Blockchain Security Companies: Can use it for audit automation.
+### Blockchain Security Companies: Can use it for audit automation.
 
 
